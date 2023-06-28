@@ -1,0 +1,218 @@
+body{
+    background-image:url(imagen2/nuevo\ sol.jpg);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Prism', cursive; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Prism&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+hr{
+   border-color: rgb(150, 231, 68);
+}
+.logo{
+    border: none;
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 100;
+}
+
+.menu a{
+    list-style: none;
+    margin: 10px;
+    padding: 8px;    
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.menu a:hover{
+    padding: 8px 8px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+.consultas, .inicio{
+    cursor: pointer;   
+}
+.foto2{
+    border-radius: 50%;
+    margin-bottom: 20px;  
+}
+.foto img{
+    width: 300px;
+}
+h1{
+    font-size: 48px;
+    color: azure;
+    font-size: 25px;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+@media(min-width:1024px){
+    h1{
+        text-align: left;
+        font-size: 48px;
+    }
+    .descripcion{
+        flex-direction: row;
+        text-align: left;
+    }
+    .descarga{
+        text-align: left;
+    }
+    #parrafo1{
+        margin: 80px;
+    }
+    #parrafo1 p{
+        font-size: 30px;
+    }
+    .esp{
+        border: solid white;
+        width: 480px;
+    }
+    .btn{
+        display: none;
+    }
+}
+@media(max-width: 1024px){
+    .menu{
+        display: none;
+        background: transparent;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        right: 2px;
+        scroll-behavior: smooth;
+    }
+    .btn{
+       display: block;
+       position: absolute;
+       top: 15px;
+       right: 25px;
+       cursor: pointer;
+    }
+    h1{
+        text-align: center;
+    }
+    .logo{
+        border: none;
+        font-size: 25px;
+        color: aliceblue;
+        font-weight: 100;
+    }
+}
+.menu.ver{
+    display: flex;
+ }  
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+#parrafo1{
+    font-size: 30px;
+    color: white; 
+}
+.descarga{
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: #593fcf;
+    width: 160px;
+    height: 30px;
+    border-color: rgb(150, 231, 68);
+    font-weight: 700;   
+}
+.descarga:hover, .inicio, .consultas{
+    color: #000;
+    background-color: rgb(150, 231, 68);
+    transition: 0.3s; 
+    border-radius: 20px;
+}
+.contenido2{
+    font-size: 30px;
+    background-color: #593fcf;
+    color: white; 
+    border-radius: 20px;
+    text-align: center;
+    margin: 50px 50px 100px 50px;
+    padding: 10px;
+    border: solid rgb(150, 231, 68) ;
+}
+h3{
+    font-size: 40px;
+    color: white;
+    text-align: center;   
+}
+.lista1{
+    font-size: 30px;
+    background-color: #593fcf;
+    color: white; 
+    border-radius: 20px;
+    text-align: center;
+    margin: 50px 50px 100px 50px;
+    padding: 2%;
+    border: solid rgb(150, 231, 68);
+}
+#consultas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   padding: auto; 
+   margin: 20px;
+}
+.img1, .img2, .img3{
+    filter: invert(99%);
+    width: 80px;
+    margin : 5%;
+}
+footer{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    margin: auto;
+    padding: 1%;
+    font-size: 20px;
+}
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
