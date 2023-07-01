@@ -17,15 +17,14 @@ header{
     padding: 2%;
 }
 hr{
-   border-color: rgb(150, 231, 68);
+   border-color: #593fcf;
 }
 .logo{
-    border: none;
+    border-radius: 20px;
     font-size: 25px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-weight: 100;
 }
-
 .menu a{
     list-style: none;
     margin: 10px;
@@ -145,14 +144,28 @@ main {
     background-color: #593fcf;
     width: 160px;
     height: 30px;
-    border-color: rgb(150, 231, 68);
+    border-color: white;
     font-weight: 700;   
 }
 .descarga:hover, .inicio, .consultas{
     color: #000;
-    background-color: rgb(150, 231, 68);
+    background-color: #593fcf;
     transition: 0.3s; 
     border-radius: 20px;
+}
+@keyframes neon-animation {
+    0% {
+        box-shadow: 0 0 10px #593fcf, 0 0 20px  #593fcf, 0 0 40px  #593fcf, 0 0 80px  #593fcf, 0 0 120px  #593fcf, 0 0 200px  #593fcf, 0 0 300px  #593fcf;
+    }
+    100% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px  #593fcf, 0 0 80px  #593fcf, 0 0 130px  #593fcf, 0 0 200px  #593fcf;
+    }
+}
+
+.descarga:hover{
+    position: relative;
+    z-index: 100;
+    animation: neon-animation 1s infinite alternate;
 }
 .contenido2{
     font-size: 30px;
@@ -162,7 +175,7 @@ main {
     text-align: center;
     margin: 50px 50px 100px 50px;
     padding: 10px;
-    border: solid rgb(150, 231, 68) ;
+    border: solid white ;
 }
 h3{
     font-size: 40px;
@@ -177,19 +190,42 @@ h3{
     text-align: center;
     margin: 50px 50px 100px 50px;
     padding: 2%;
-    border: solid rgb(150, 231, 68);
+    border: solid white;
 }
-#consultas{
+@keyframes neon-animation {
+    0% {
+        box-shadow: 0 0 10px #593fcf, 0 0 20px  #593fcf, 0 0 40px  #593fcf, 0 0 80px  #593fcf, 0 0 120px  #593fcf, 0 0 200px  #593fcf, 0 0 300px  #593fcf;
+    }
+    100% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px  #593fcf, 0 0 80px  #593fcf, 0 0 130px  #593fcf, 0 0 200px  #593fcf;
+    }
+}
+#consultas a{
+    position: relative;
+    z-index: 0;
+}
+#consultas a:active{    
+    animation: neon-animation 1s infinite alternate;
+}
+
+#consultas, .active{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   padding: auto; 
-   margin: 20px;
+    padding: auto; 
+    margin: 20px;
+}
+#consultas a:hover{
+    border-radius: 10px;
+    background-color: #593fcf;
+    height: 100px;
 }
 .img1, .img2, .img3{
     filter: invert(99%);
-    width: 80px;
-    margin : 5%;
+    width: 100px;
+    margin : auto;
+    
+    
 }
 footer{
     text-align: center;
@@ -197,7 +233,7 @@ footer{
     color: #fff;
     margin: auto;
     padding: 1%;
-    font-size: 20px;
+    font-size: 30px;
 }
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
